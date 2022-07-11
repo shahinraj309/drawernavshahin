@@ -23,7 +23,7 @@ public class ToolsFragment extends Fragment {
         toolsViewModel =
                 ViewModelProviders.of(this).get(ToolsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_tools, container, false);
-        final TextView textView = root.findViewById(R.id.text_tools);
+        final TextView textView = root.findViewById(R.id.text_home);
         toolsViewModel.getText().observe(getViewLifecycleOwner(),
                 new Observer<String>() {
                     @Override
